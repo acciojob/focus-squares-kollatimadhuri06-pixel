@@ -21,7 +21,23 @@
 	<div class="square" id="square2" ></div>
 	<div class="square" id="square3" ></div>
 
-	<script type="text/javascript" src="./script.js">
+	<script>//your JS code here. If required.
+ let boxes=document.getElementsByClassName("square")
+for(let box of boxes){
+	box.addEventListener("mouseenter",()=>{
+		for(item of boxes){
+			if(box!==item)
+			item.classList.add("active")
+		}
+	}
+	})
+
+	box.addEventListener("mouseout",()=>{
+		for(item of boxes){
+			if(box!==item)
+			item.classList.remove("active")
+		}
+		})
 	</script>
 </body>
 </html>
